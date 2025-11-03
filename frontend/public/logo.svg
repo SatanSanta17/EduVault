@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#4F46E5" opacity="0.1"/>
+  
+  <!-- Book/Vault Icon -->
+  <path d="M 60 50 L 60 140 L 140 140 L 140 50 Z" fill="#4F46E5" stroke="#4F46E5" stroke-width="3"/>
+  
+  <!-- Book pages lines -->
+  <line x1="75" y1="70" x2="125" y2="70" stroke="white" stroke-width="2" opacity="0.7"/>
+  <line x1="75" y1="85" x2="125" y2="85" stroke="white" stroke-width="2" opacity="0.7"/>
+  <line x1="75" y1="100" x2="125" y2="100" stroke="white" stroke-width="2" opacity="0.7"/>
+  <line x1="75" y1="115" x2="125" y2="115" stroke="white" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Lock/Vault symbol on the side -->
+  <rect x="125" y="85" width="20" height="20" rx="2" fill="#10B981" stroke="white" stroke-width="2"/>
+  <path d="M 135 85 L 135 95 L 130 95 L 130 100 L 140 100 L 140 95 L 135 95 Z" fill="white"/>
+  <circle cx="135" cy="92" r="2" fill="white"/>
+</svg>
+
+
