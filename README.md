@@ -30,6 +30,11 @@ database/eduvault.sql
 3. If your MySQL credentials differ, update `backend/api/connect.php`:
    - `$DB_HOST`, `$DB_USER`, `$DB_PASS`, `$DB_NAME`
 4. Start Apache and MySQL from XAMPP control panel.
+5. Alternative (no Apache): run the PHP built-in server for local dev  
+   - `php -S localhost:8080 -t backend/api` (from the repo root or `backend/`)  
+   - Update your frontend to call `http://localhost:8080/login.php`, etc., or set `REACT_APP_API_BASE=http://localhost:8080`.  
+   - Remember: no `.htaccess` support; requests must hit the actual script files.
+   
 
 ## 3) Frontend Setup (React)
 1. Open a terminal in `frontend/`.
@@ -46,6 +51,10 @@ database/eduvault.sql
 If you use a different backend path, update `frontend/src/services/api.js`:
 ```js
 export const API_BASE = 'http://localhost/eduvault/backend/api';
+```
+if using phpp internal server then:
+```js
+export const API_BASE = 'http://localhost:8080/';
 ```
 
 ## API Endpoints (PHP)

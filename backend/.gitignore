@@ -1,0 +1,11 @@
+# Uploaded files and temp data
+uploads/
+tmp/
+*.log
+
+# Composer / PHP caches
+vendor/
+composer.lock
+*.cache
+.env
+.env.*

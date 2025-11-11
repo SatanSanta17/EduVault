@@ -94,11 +94,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     respond_json(['status' => 'ok'], 200);
 }
 
-$DB_HOST = 'localhost';
-$DB_PORT = 3306;
-$DB_USER = 'root';
-$DB_PASS = '';
-$DB_NAME = 'eduvault';
+$DB_HOST = getenv('DB_HOST') ?: '127.0.0.1';
+$DB_PORT = getenv('DB_PORT') ?: 8889;
+$DB_USER = getenv('DB_USER') ?: 'root';
+$DB_PASS = getenv('DB_PASS') ?: 'root';
+$DB_NAME = getenv('DB_NAME') ?: 'eduvault';
 
 // Report errors but don't throw exceptions - we'll handle them manually
 mysqli_report(MYSQLI_REPORT_OFF);
