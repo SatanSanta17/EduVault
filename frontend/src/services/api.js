@@ -4,7 +4,8 @@ import axios from 'axios';
 // Default: http://localhost/eduvault/backend/api (port 80)
 // If XAMPP uses port 8080, set REACT_APP_API_BASE=http://localhost:8080/eduvault/backend/api
 // Or modify this line directly: export const API_BASE = 'http://localhost:8080/eduvault/backend/api';
-export const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost/eduvault/backend/api';
+export const API_BASE =
+  process.env.REACT_APP_API_BASE || "http://localhost:8080/";
 
 export const api = axios.create({
     baseURL: API_BASE,

@@ -1,0 +1,32 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+*.tmp
+*.swp
+*.swo
+
+# IDE/editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Dependencies & builds
+node_modules/
+dist/
+build/
+coverage/
+
+# PHP/Composer
+vendor/
+composer.lock
+
+# Env/config
+.env
+.env.*.local
+*.local
+
+id_ed25519_github_personal
+id_ed25519_github_personal.pub
