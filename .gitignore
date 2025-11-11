@@ -27,3 +27,6 @@ composer.lock
 .env
 .env.*.local
 *.local
+
+id_ed25519_github_personal
+id_ed25519_github_personal.pub
